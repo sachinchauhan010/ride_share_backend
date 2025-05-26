@@ -9,13 +9,13 @@ import org.hibernate.annotations.CreationTimestamp;
 import java.time.LocalDateTime;
 
 @Entity
-@Table(name = "passengers")
+@Table(name = "users")
 @Data // includes getters, setters, toString, equals, hashCode
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString(exclude = "password") // prevent password from appearing in logs
-public class Passenger {
+public class User {
 
   @Id
   @GeneratedValue(strategy = GenerationType.AUTO)
